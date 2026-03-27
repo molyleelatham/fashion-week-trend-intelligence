@@ -1,6 +1,6 @@
 # Fashion Intelligence Platform
 
-A full-stack data science dashboard tracking high fashion runway shows, editorial sentiment, and trend forecasting across the 2026 fashion weeks (NYFW, LFW, MFW, PFW). Scrapes Vogue Runway, Business of Fashion, and Reddit; runs NLP sentiment analysis and BERTopic theme extraction; and surfaces insights through a Next.js dashboard with an AI chat interface powered by Claude.
+A full-stack data science dashboard tracking high fashion runway shows, editorial sentiment, and trend forecasting across the 2026 fashion weeks (NYFW, LFW, MFW, PFW). Scrapes Vogue Runway, Business of Fashion, and Reddit; runs NLP sentiment analysis and BERTopic theme extraction; and surfaces insights through a Next.js dashboard with an AI chat interface powered by OpenAI.
 
 ## Stack
 
@@ -10,7 +10,7 @@ A full-stack data science dashboard tracking high fashion runway shows, editoria
 | Scrapers | httpx, BeautifulSoup, PRAW |
 | NLP | HuggingFace Transformers, BERTopic, sentence-transformers |
 | Frontend | Next.js 14 (App Router), Tailwind CSS, Recharts |
-| AI Chat | Anthropic Claude API (claude-sonnet-4-6) |
+| AI Chat | OpenAI API (gpt-4o) |
 
 ## Brand Scope (SS2026 & AW2026)
 
@@ -60,7 +60,7 @@ Vogue Runway, Business of Fashion, Reddit scrapers with rate limiting and retry 
 Sentiment analysis (cardiffnlp/twitter-roberta-base-sentiment-latest) + BERTopic theme extraction
 
 ### Checkpoint 5 — FastAPI backend
-All routes: /api/brands, /api/trends, /api/feed, /api/chat (Claude-powered)
+All routes: /api/brands, /api/trends, /api/feed, /api/chat (GPT-4o-powered)
 
 ### Checkpoint 6 — Next.js dashboard
 Overview, Brands, Trends, Feed, AI Chat pages with dark editorial design
